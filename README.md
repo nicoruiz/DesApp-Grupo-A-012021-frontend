@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/nicoruiz/DesApp-Grupo-A-012021-frontend.svg?branch=main)](https://travis-ci.com/nicoruiz/DesApp-Grupo-A-012021-frontend)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
