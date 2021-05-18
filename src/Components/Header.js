@@ -19,8 +19,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ButtonAppBar() {
+export default function ButtonAppBar(props) {
   const classes = useStyles();
+
+  function showLogin() {
+    props.showLoginChild(true);
+  }
+  
+  function showRegister() {
+    props.showRegisterChild(true);
+  }
 
   return (
     <div className={classes.root}>
@@ -32,8 +40,8 @@ export default function ButtonAppBar() {
           <Typography variant="h6" className={classes.title}>
             Re-seña!
           </Typography>
-          <Button color="inherit">Login</Button>
-          <Button color="inherit">Sign up</Button>
+          <Button color="inherit" onClick={ () => showLogin() }>Login</Button>
+          <Button color="inherit" onClick={ () => showRegister() }>Sign up</Button>
         </Toolbar>
       </AppBar>
     </div>
